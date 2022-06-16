@@ -1,0 +1,130 @@
+/* header start */
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    margin: 0;
+}
+
+.header {  /* set header */
+    width: 100%;
+    height: 69px;
+    display: block; /* header behavior */
+    background-color: black; /* header color */
+    border-bottom: 1px solid seashell;
+    position: fixed; /* header position is fixed so won't move */
+    top: 0px; /* using padding-top: 0px; won't solve the gap issue, so this method is better option */
+}
+
+.logo { /* set logo only */
+    height: 50px;
+    float: left;
+    padding: 10px 10px; /* centering logo top-bottom & left-right */
+}
+
+.navigation { /* header start */
+    float: right; /* so that each element is correct order */
+    height: 100px;
+    margin: 0 auto; /* top-bottom (0) & left-right (auto) */
+}
+
+.navigation a { /* top-bottom (0) & left-right (auto) */
+    height: 69px;
+    display: table; /* lets the element behave like a <table> element */
+    float: left;
+    padding: 0px 20px;
+}
+
+.navigation a li {
+    display: table-cell; /* lets the element behave like a <td> element */
+    vertical-align: middle; /* sets the navigation anchors to align in the middle  */
+    height: 100%;
+    text-decoration: underline; 
+    color: seashell;
+}
+/* header end */
+
+
+
+/* mission start */
+.container {
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    max-width: 1200px;
+    margin: 40px auto 40px auto; /* top left bottom right */
+    display: flex; /* flex box in front of background image */
+}
+
+.mission-text {
+    margin: auto; /* as our container (above) is a flex box, this setting will help horizontally and vertically center the text */
+    background-color: black;
+    width: 100%;
+}
+/* mission end */
+
+
+
+/* featured start */
+.f-container {
+    display: inline-flex; /* will inline displays elements in the same line as the rest. */
+    max-width: 1000px;
+    height: auto;
+    flex-wrap: wrap; /* if there isn't enough space or the browser is re-sized, then the images will wrap/ cross into the next line */
+    align-items: center; /* centers the alignments for all the items of the div */
+    justify-content: center; /* aligns the flex items at the center of the container */
+}
+
+.trends img {
+    height: 200px;
+    width: 300px;
+    padding: 10px 10px; /* top-bottom & left-right */
+}
+/* featured end */
+
+
+ 
+/* location start */
+.banner {
+    height: 500px;
+    max-width: 1200px;
+    margin: 40px auto auto auto; /* create space around elements; top (40px), right-bottom-left (auto) */
+    padding-top: 85px; /* top padding (space) */
+    background-image: url("img-locations-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box-container {
+    max-width: 1020px;
+    margin: 15px auto auto auto; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 300px;
+    padding: 20px;
+    margin-bottom: auto;
+    flex-basis: 30%; /* width */
+    box-sizing: border-box; /* allows us to include the padding and border in an element's total width and height */
+    background-color: black;
+    opacity: 0.8;
+}
+/* location end */
+
+
+
+/* footer start */
+footer {
+    display: block;
+    float: left;
+    padding-left: 20px;
+}
+/* footer end */
