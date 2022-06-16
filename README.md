@@ -2,4 +2,4 @@
 Project: Tea Cozy
 
 Credits:
-Nenad Dabic
+Nenad Dabic for additional guidance
